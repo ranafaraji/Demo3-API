@@ -8,7 +8,7 @@ from worker import sync_to_es
 
 app = FastAPI(title="Demo 3 API")
 r = redis.Redis(host="localhost", port=6379, decode_responses=True)
-
+#comment
 with open("plan.schema.json", "r") as f:
     PLAN_SCHEMA = json.load(f)
 
